@@ -1,0 +1,104 @@
+<%= form_with(model: camion, local: true) do |form| %>
+  <% if camion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(camion.errors.count, "error") %> prohibited this camion from being saved:</h2>
+
+      <ul>
+      <% camion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :peso_carga %>
+    <%= form.text_field :peso_carga %>
+  </div>
+  <div class="field">
+    <%= form.label :volumen_carga %>
+    <%= form.text_field :volumen_cargar %>
+  </div>
+   <div class="field">
+    <%= form.label :equipo_carga %>
+    <%= form.text_field :equipo_cargar %>
+  </div>
+  <div class="field">
+    <%= form.label :equipo_carga %>
+    <%= form.text_field :equipo_cargar %>
+  </div>
+  <div class="field">
+    <%= form.label :condicion_vial %>
+    <%= form.text_field :condicion_vial %>
+  </div>
+  <div class="field">
+    <%= form.label :condicion_ambiental %>
+    <%= form.text_field :condicion_ambiental %>
+    <div class="field">
+    <%= form.label :condicion_geografica %>
+    <%= form.text_field :condicion_geografica %>
+  </div>
+  <div class="field">
+    <%= form.label :tipo_carga %>
+    <%= form.text_field :tipo_carga %>
+  </div>
+  <div class="field">
+    <%= form.label :clase_carga %>
+    <%= form.text_field :clase_carga %>
+  </div>
+   <div class="field">
+    <%= form.label :estibado_carga %>
+    <%= form.text_field :estibado_carga %>
+  </div>
+   <div class="field">
+    <%= form.label :peso_kilome %>
+    <%= form.text_field :peso_kilome %>
+  </div>
+  <div class="field">
+    <%= form.label :peso_kilome %>
+    <%= form.text_field :peso_kilome %>
+  </div>
+  <div class="field">
+    <%= form.label :peso_tonelada %>
+    <%= form.text_field :peso_tonelada %>
+  </div>
+  <div class="field">
+    <%= form.label :peso_hora %>
+    <%= form.text_field :peso_hora %>
+  </div>
+  <div class="field">
+    <%= form.label :gasto_financ %>
+    <%= form.text_field :gasto_financ %>
+  </div>
+   <div class="field">
+    <%= form.label :cifra_negocio %>
+    <%= form.text_field :cifra_negocio %>
+  </div>
+  <div class="field">
+    <%= form.label :contingencia_venta %>
+    <%= form.text_field :contigencia_venta %>
+  </div>
+  <div class="field">
+    <%= form.label :promocion_venta %>
+    <%= form.text_field :promocion_venta %>
+  </div>
+  <div class="field">
+    <%= form.label :contingencia_administrativa %>
+    <%= form.text_field :contingencia_administrativa %>
+  </div>
+  <div class="field">
+    <%= form.label :contingencia_operacional %>
+    <%= form.text_field :contingencia_operacional %>
+  </div>
+  <div class="field">
+    <%= form.label :contingencia_produccion  %>
+    <%= form.text_field :contingencia_produccion %>
+  </div>
+
+
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
