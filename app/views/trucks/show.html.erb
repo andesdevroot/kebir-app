@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @truck.tipo %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @truck.marca %>
+</p>
+
+<p>
+  <strong>Patente:</strong>
+  <%= @truck.patente %>
+</p>
+
+<p>
+  <strong>Año:</strong>
+  <%= @truck.año %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @truck.modelo %>
+</p>
+
+<p>
+  <strong>Nombre chofer:</strong>
+  <%= @truck.nombre_chofer %>
+</p>
+
+<p>
+  <strong>Dueno:</strong>
+  <%= @truck.dueno %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @truck.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_truck_path(@truck) %> |
+<%= link_to 'Back', trucks_path %>

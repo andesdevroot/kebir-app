@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :trucks
   devise_for :users
   resources :camions
   root to: redirect('/camions')

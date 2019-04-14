@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_12_192145) do
+ActiveRecord::Schema.define(version: 2019_04_14_160226) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,19 @@ ActiveRecord::Schema.define(version: 2019_04_12_192145) do
     t.integer "contingencia_administrativa"
     t.integer "contingencia_operacional"
     t.integer "contingencia_produccion"
+  end
+
+  create_table "trucks", force: :cascade do |t|
+    t.string "tipo"
+    t.string "marca"
+    t.string "patente"
+    t.string "año"
+    t.string "modelo"
+    t.string "nombre_chofer"
+    t.string "dueno"
+    t.text "descripcion"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
