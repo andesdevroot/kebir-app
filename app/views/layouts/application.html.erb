@@ -29,14 +29,15 @@
         <p class="navbar-text pull-right">
 <% if user_signed_in? %>
   Logged in as <strong><%= current_user.email %></strong>.
-  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+  <%= link_to 'Editar Perfil', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Cerrar Sesión", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
 <% else %>
-  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+  <%= link_to "Crear Cuenta", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Ingresar", new_user_session_path, :class => 'navbar-link'  %>
 <% end %>
 </p>
-        <li><a href="/camions">Camiones</a></li>
+        <li><a href="/trucks">Camiones Ingresados</a></li>
+        <li><a href="">Modulos Kebir</a></li>
       </ul>
     </div>
   </div>
@@ -51,7 +52,7 @@
   <%= yield %>
   <footer>
   <div class="container">
-    KEBIR <%= Time.now.year %>
+    KEBIR PROTOTIPO <%= Time.now.year %>
   </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
