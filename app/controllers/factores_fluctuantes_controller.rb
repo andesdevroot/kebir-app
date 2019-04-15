@@ -69,6 +69,6 @@ class FactoresFluctuantesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def factores_fluctuante_params
-      params.require(:factores_fluctuante).permit(:peso_carga, :volumen_carga)
+      params.require(:factores_fluctuante).permit(:peso_carga, :volumen_carga, :condiciones_viales)
     end
 end
