@@ -1,0 +1,27 @@
+<%= form_with(model: factores_fluctuante, local: true) do |form| %>
+  <% if factores_fluctuante.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(factores_fluctuante.errors.count, "error") %> prohibited this factores_fluctuante from being saved:</h2>
+
+      <ul>
+      <% factores_fluctuante.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :peso_carga %>
+    <%= form.text_field :peso_carga %>
+  </div>
+  <div class="field">
+    <%= form.label :volumen_carga %>
+    <%= form.text_field :volumen_carga %>
+  </div>
+
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

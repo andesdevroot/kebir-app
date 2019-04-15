@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Peso carga:</strong>
+  <%= @factores_fluctuante.peso_carga %>
+</p>
+<p>
+  <strong>Volumen  carga:</strong>
+  <%= @factores_fluctuante.volumen_carga %>
+</p>
+
+
+<%= link_to 'Editar', edit_factores_fluctuante_path(@factores_fluctuante) %> |
+<%= link_to 'Volver', factores_fluctuantes_path %>

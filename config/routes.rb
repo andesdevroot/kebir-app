@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :factores_fluctuantes
   resources :trucks
   devise_for :users
   resources :camions

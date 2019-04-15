@@ -1,0 +1,2 @@
+module FactoresFluctuantesHelper
+end
