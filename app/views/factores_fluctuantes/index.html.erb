@@ -11,6 +11,7 @@
         <th>Condiciones ambientales</th>
         <th>Condiciones geograficas</th>
         <th>Tipos carga</th>
+        <th>Estibado carga</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,6 +25,7 @@
           <td><%= factores_fluctuante.condiciones_ambientales %></td>
           <td><%= factores_fluctuante.condiciones_geograficas %></td>
           <td><%= factores_fluctuante.tipo_carga %></td>
+          <td><%= factores_fluctuante.estibado_carga %></td>
         <td><%= link_to 'Ver', factores_fluctuante %></td>
         <td><%= link_to 'Editar', edit_factores_fluctuante_path(factores_fluctuante) %></td>
         <td><%= link_to 'Borrar', factores_fluctuante, method: :delete, data: { confirm: 'Está seguro?' } %></td>
