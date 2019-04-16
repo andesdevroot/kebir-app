@@ -8,6 +8,7 @@
       <th>Peso carga</th>
       <th>Volumen carga</th>
       <th>Condiciones viales</th>
+        <th>Condiciones ambientales</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -18,9 +19,10 @@
         <td><%= factores_fluctuante.peso_carga %></td>
          <td><%= factores_fluctuante.volumen_carga %></td>
          <td><%= factores_fluctuante.condiciones_viales %></td>
+          <td><%= factores_fluctuante.condiciones_ambientales %></td>
         <td><%= link_to 'Ver', factores_fluctuante %></td>
         <td><%= link_to 'Editar', edit_factores_fluctuante_path(factores_fluctuante) %></td>
-        <td><%= link_to 'Borrar', factores_fluctuante, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Borrar', factores_fluctuante, method: :delete, data: { confirm: 'Está seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
