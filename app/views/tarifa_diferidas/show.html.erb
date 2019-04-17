@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Peso kilometro:</strong>
+  <%= @tarifa_diferida.peso_kilometro %>
+</p>
+
+<p>
+  <strong>Peso tonelada:</strong>
+  <%= @tarifa_diferida.peso_tonelada %>
+</p>
+
+<p>
+  <strong>Peso hora:</strong>
+  <%= @tarifa_diferida.peso_hora %>
+</p>
+
+<%= link_to 'Edit', edit_tarifa_diferida_path(@tarifa_diferida) %> |
+<%= link_to 'Back', tarifa_diferidas_path %>

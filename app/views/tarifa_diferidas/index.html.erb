@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tarifa Diferidas</h1>
+
+<table class="table table-hover table-condensed">
+  <thead>
+    <tr>
+      <th>Peso kilometro</th>
+      <th>Peso tonelada</th>
+      <th>Peso hora</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tarifa_diferidas.each do |tarifa_diferida| %>
+      <tr>
+        <td><%= tarifa_diferida.peso_kilometro %></td>
+        <td><%= tarifa_diferida.peso_tonelada %></td>
+        <td><%= tarifa_diferida.peso_hora %></td>
+        <td><%= link_to 'Show', tarifa_diferida %></td>
+        <td><%= link_to 'Edit', edit_tarifa_diferida_path(tarifa_diferida) %></td>
+        <td><%= link_to 'Destroy', tarifa_diferida, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tarifa Diferida', new_tarifa_diferida_path %>

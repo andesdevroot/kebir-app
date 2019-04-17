@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  peso_kilometro: 9.99
+  peso_tonelada: 9.99
+  peso_hora: 9.99
+
+two:
+  peso_kilometro: 9.99
+  peso_tonelada: 9.99
+  peso_hora: 9.99

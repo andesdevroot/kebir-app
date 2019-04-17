@@ -1,0 +1,2 @@
+class TarifaDiferida < ApplicationRecord
+end

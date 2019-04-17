@@ -1,0 +1,32 @@
+<%= form_with(model: tarifa_diferida, local: true) do |form| %>
+  <% if tarifa_diferida.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tarifa_diferida.errors.count, "error") %> prohibited this tarifa_diferida from being saved:</h2>
+
+      <ul>
+      <% tarifa_diferida.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :peso_kilometro %>
+    <%= form.text_field :peso_kilometro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :peso_tonelada %>
+    <%= form.text_field :peso_tonelada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :peso_hora %>
+    <%= form.text_field :peso_hora %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
