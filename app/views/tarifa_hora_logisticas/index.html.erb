@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tarifa Hora Logisticas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Valor dolar</th>
+      <th>Variacion inversion</th>
+      <th>Variacion mano obra</th>
+      <th>Variacion materia prima</th>
+      <th>Varicion financiera</th>
+      <th>Nivel utilidades</th>
+      <th>Impuestos derechos</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tarifa_hora_logisticas.each do |tarifa_hora_logistica| %>
+      <tr>
+        <td><%= tarifa_hora_logistica.valor_dolar %></td>
+        <td><%= tarifa_hora_logistica.variacion_inversion %></td>
+        <td><%= tarifa_hora_logistica.variacion_mano_obra %></td>
+        <td><%= tarifa_hora_logistica.variacion_materia_prima %></td>
+        <td><%= tarifa_hora_logistica.varicion_financiera %></td>
+        <td><%= tarifa_hora_logistica.nivel_utilidades %></td>
+        <td><%= tarifa_hora_logistica.impuestos_derechos %></td>
+        <td><%= link_to 'Show', tarifa_hora_logistica %></td>
+        <td><%= link_to 'Edit', edit_tarifa_hora_logistica_path(tarifa_hora_logistica) %></td>
+        <td><%= link_to 'Destroy', tarifa_hora_logistica, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tarifa Hora Logistica', new_tarifa_hora_logistica_path %>

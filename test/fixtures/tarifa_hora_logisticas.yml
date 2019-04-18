@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  valor_dolar: 9.99
+  variacion_inversion: 1
+  variacion_mano_obra: 1
+  variacion_materia_prima: 9.99
+  varicion_financiera: 9.99
+  nivel_utilidades: 9.99
+  impuestos_derechos: 9.99
+
+two:
+  valor_dolar: 9.99
+  variacion_inversion: 1
+  variacion_mano_obra: 1
+  variacion_materia_prima: 9.99
+  varicion_financiera: 9.99
+  nivel_utilidades: 9.99
+  impuestos_derechos: 9.99

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_18_024941) do
+ActiveRecord::Schema.define(version: 2019_04_18_035410) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,18 @@ ActiveRecord::Schema.define(version: 2019_04_18_024941) do
     t.decimal "peso_kilometro"
     t.decimal "peso_tonelada"
     t.decimal "peso_hora"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tarifa_hora_logisticas", force: :cascade do |t|
+    t.decimal "valor_dolar"
+    t.integer "variacion_inversion"
+    t.integer "variacion_mano_obra"
+    t.decimal "variacion_materia_prima"
+    t.decimal "varicion_financiera"
+    t.decimal "nivel_utilidades"
+    t.decimal "impuestos_derechos"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

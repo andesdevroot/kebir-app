@@ -1,0 +1,52 @@
+<%= form_with(model: tarifa_hora_logistica, local: true) do |form| %>
+  <% if tarifa_hora_logistica.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tarifa_hora_logistica.errors.count, "error") %> prohibited this tarifa_hora_logistica from being saved:</h2>
+
+      <ul>
+      <% tarifa_hora_logistica.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :valor_dolar %>
+    <%= form.text_field :valor_dolar %>
+  </div>
+
+  <div class="field">
+    <%= form.label :variacion_inversion %>
+    <%= form.number_field :variacion_inversion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :variacion_mano_obra %>
+    <%= form.number_field :variacion_mano_obra %>
+  </div>
+
+  <div class="field">
+    <%= form.label :variacion_materia_prima %>
+    <%= form.text_field :variacion_materia_prima %>
+  </div>
+
+  <div class="field">
+    <%= form.label :varicion_financiera %>
+    <%= form.text_field :varicion_financiera %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nivel_utilidades %>
+    <%= form.text_field :nivel_utilidades %>
+  </div>
+
+  <div class="field">
+    <%= form.label :impuestos_derechos %>
+    <%= form.text_field :impuestos_derechos %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

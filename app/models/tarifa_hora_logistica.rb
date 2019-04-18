@@ -1,0 +1,2 @@
+class TarifaHoraLogistica < ApplicationRecord
+end
