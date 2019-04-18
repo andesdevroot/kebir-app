@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  localidad_logistica: 1
+  localidad_consolidado: 1
+  localidad_stacking: 1
+  valor_peajes: 9.99
+  vitaico_kilometros: 9.99
+  servicio_kilometro: 9.99
+  sueldo_conductor: 1
+  porcentaje_conductor: 9.99
+  horas_logistica: 1
+
+two:
+  localidad_logistica: 1
+  localidad_consolidado: 1
+  localidad_stacking: 1
+  valor_peajes: 9.99
+  vitaico_kilometros: 9.99
+  servicio_kilometro: 9.99
+  sueldo_conductor: 1
+  porcentaje_conductor: 9.99
+  horas_logistica: 1

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :costos_variables
   resources :costos_fijos
   resources :tarifa_hora_logisticas
   resources :costos_marginals

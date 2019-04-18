@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Costos Variables</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Localidad logistica</th>
+      <th>Localidad consolidado</th>
+      <th>Localidad stacking</th>
+      <th>Valor peajes</th>
+      <th>Vitaico kilometros</th>
+      <th>Servicio kilometro</th>
+      <th>Sueldo conductor</th>
+      <th>Porcentaje conductor</th>
+      <th>Horas logistica</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @costos_variables.each do |costos_variable| %>
+      <tr>
+        <td><%= costos_variable.localidad_logistica %></td>
+        <td><%= costos_variable.localidad_consolidado %></td>
+        <td><%= costos_variable.localidad_stacking %></td>
+        <td><%= costos_variable.valor_peajes %></td>
+        <td><%= costos_variable.vitaico_kilometros %></td>
+        <td><%= costos_variable.servicio_kilometro %></td>
+        <td><%= costos_variable.sueldo_conductor %></td>
+        <td><%= costos_variable.porcentaje_conductor %></td>
+        <td><%= costos_variable.horas_logistica %></td>
+        <td><%= link_to 'Show', costos_variable %></td>
+        <td><%= link_to 'Edit', edit_costos_variable_path(costos_variable) %></td>
+        <td><%= link_to 'Destroy', costos_variable, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Costos Variable', new_costos_variable_path %>

@@ -1,0 +1,62 @@
+<%= form_with(model: costos_variable, local: true) do |form| %>
+  <% if costos_variable.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(costos_variable.errors.count, "error") %> prohibited this costos_variable from being saved:</h2>
+
+      <ul>
+      <% costos_variable.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :localidad_logistica %>
+    <%= form.number_field :localidad_logistica %>
+  </div>
+
+  <div class="field">
+    <%= form.label :localidad_consolidado %>
+    <%= form.number_field :localidad_consolidado %>
+  </div>
+
+  <div class="field">
+    <%= form.label :localidad_stacking %>
+    <%= form.number_field :localidad_stacking %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor_peajes %>
+    <%= form.text_field :valor_peajes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vitaico_kilometros %>
+    <%= form.text_field :vitaico_kilometros %>
+  </div>
+
+  <div class="field">
+    <%= form.label :servicio_kilometro %>
+    <%= form.text_field :servicio_kilometro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sueldo_conductor %>
+    <%= form.number_field :sueldo_conductor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :porcentaje_conductor %>
+    <%= form.text_field :porcentaje_conductor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :horas_logistica %>
+    <%= form.number_field :horas_logistica %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
