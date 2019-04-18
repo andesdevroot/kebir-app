@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gasto_finaciero: 9.99
+  cifra_negocio: 9.99
+  promocion_venta: 9.99
+  contingencia_administrativa: 9.99
+  contingencia_operacional: 9.99
+  contingencia_produccion: 9.99
+
+two:
+  gasto_finaciero: 9.99
+  cifra_negocio: 9.99
+  promocion_venta: 9.99
+  contingencia_administrativa: 9.99
+  contingencia_operacional: 9.99
+  contingencia_produccion: 9.99

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :costos_marginals
   resources :tarifa_diferidas
   resources :factores_fluctuantes
   resources :trucks

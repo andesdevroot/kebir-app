@@ -1,0 +1,47 @@
+<%= form_with(model: costos_marginal, local: true) do |form| %>
+  <% if costos_marginal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(costos_marginal.errors.count, "error") %> prohibited this costos_marginal from being saved:</h2>
+
+      <ul>
+      <% costos_marginal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :gasto_finaciero %>
+    <%= form.text_field :gasto_finaciero %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cifra_negocio %>
+    <%= form.text_field :cifra_negocio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :promocion_venta %>
+    <%= form.text_field :promocion_venta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contingencia_administrativa %>
+    <%= form.text_field :contingencia_administrativa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contingencia_operacional %>
+    <%= form.text_field :contingencia_operacional %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contingencia_produccion %>
+    <%= form.text_field :contingencia_produccion %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

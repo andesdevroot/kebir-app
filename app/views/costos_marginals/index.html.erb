@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Costos Marginals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gasto finaciero</th>
+      <th>Cifra negocio</th>
+      <th>Promocion venta</th>
+      <th>Contingencia administrativa</th>
+      <th>Contingencia operacional</th>
+      <th>Contingencia produccion</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @costos_marginals.each do |costos_marginal| %>
+      <tr>
+        <td><%= costos_marginal.gasto_finaciero %></td>
+        <td><%= costos_marginal.cifra_negocio %></td>
+        <td><%= costos_marginal.promocion_venta %></td>
+        <td><%= costos_marginal.contingencia_administrativa %></td>
+        <td><%= costos_marginal.contingencia_operacional %></td>
+        <td><%= costos_marginal.contingencia_produccion %></td>
+        <td><%= link_to 'Show', costos_marginal %></td>
+        <td><%= link_to 'Edit', edit_costos_marginal_path(costos_marginal) %></td>
+        <td><%= link_to 'Destroy', costos_marginal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Costos Marginal', new_costos_marginal_path %>

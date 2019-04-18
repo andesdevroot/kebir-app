@@ -1,0 +1,2 @@
+class CostosMarginal < ApplicationRecord
+end

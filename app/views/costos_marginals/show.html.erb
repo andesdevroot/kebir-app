@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Gasto finaciero:</strong>
+  <%= @costos_marginal.gasto_finaciero %>
+</p>
+
+<p>
+  <strong>Cifra negocio:</strong>
+  <%= @costos_marginal.cifra_negocio %>
+</p>
+
+<p>
+  <strong>Promocion venta:</strong>
+  <%= @costos_marginal.promocion_venta %>
+</p>
+
+<p>
+  <strong>Contingencia administrativa:</strong>
+  <%= @costos_marginal.contingencia_administrativa %>
+</p>
+
+<p>
+  <strong>Contingencia operacional:</strong>
+  <%= @costos_marginal.contingencia_operacional %>
+</p>
+
+<p>
+  <strong>Contingencia produccion:</strong>
+  <%= @costos_marginal.contingencia_produccion %>
+</p>
+
+<%= link_to 'Edit', edit_costos_marginal_path(@costos_marginal) %> |
+<%= link_to 'Back', costos_marginals_path %>
