@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cantidad_movimiento_mensual: 1
+  frecuencia_movimiento: 1
+  multiplividad_tiempo_movimiento: 1
+
+two:
+  cantidad_movimiento_mensual: 1
+  frecuencia_movimiento: 1
+  multiplividad_tiempo_movimiento: 1

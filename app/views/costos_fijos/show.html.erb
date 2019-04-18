@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cantidad movimiento mensual:</strong>
+  <%= @costos_fijo.cantidad_movimiento_mensual %>
+</p>
+
+<p>
+  <strong>Frecuencia movimiento:</strong>
+  <%= @costos_fijo.frecuencia_movimiento %>
+</p>
+
+<p>
+  <strong>Multiplividad tiempo movimiento:</strong>
+  <%= @costos_fijo.multiplividad_tiempo_movimiento %>
+</p>
+
+<%= link_to 'Edit', edit_costos_fijo_path(@costos_fijo) %> |
+<%= link_to 'Back', costos_fijos_path %>

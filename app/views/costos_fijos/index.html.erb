@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Costos Fijos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cantidad movimiento mensual</th>
+      <th>Frecuencia movimiento</th>
+      <th>Multiplividad tiempo movimiento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @costos_fijos.each do |costos_fijo| %>
+      <tr>
+        <td><%= costos_fijo.cantidad_movimiento_mensual %></td>
+        <td><%= costos_fijo.frecuencia_movimiento %></td>
+        <td><%= costos_fijo.multiplividad_tiempo_movimiento %></td>
+        <td><%= link_to 'Show', costos_fijo %></td>
+        <td><%= link_to 'Edit', edit_costos_fijo_path(costos_fijo) %></td>
+        <td><%= link_to 'Destroy', costos_fijo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Costos Fijo', new_costos_fijo_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_18_035410) do
+ActiveRecord::Schema.define(version: 2019_04_18_043257) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,14 @@ ActiveRecord::Schema.define(version: 2019_04_18_035410) do
     t.integer "contingencia_administrativa"
     t.integer "contingencia_operacional"
     t.integer "contingencia_produccion"
+  end
+
+  create_table "costos_fijos", force: :cascade do |t|
+    t.integer "cantidad_movimiento_mensual"
+    t.integer "frecuencia_movimiento"
+    t.integer "multiplividad_tiempo_movimiento"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "costos_marginals", force: :cascade do |t|

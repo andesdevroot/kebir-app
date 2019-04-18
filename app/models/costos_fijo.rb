@@ -1,0 +1,2 @@
+class CostosFijo < ApplicationRecord
+end
